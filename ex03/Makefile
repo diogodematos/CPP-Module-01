@@ -1,6 +1,6 @@
 NAME = Weapon
 
-SRC = Weapon.cpp main.cpp\
+SRC = Weapon.cpp HumanA.cpp HumanB.cpp main.cpp\
 	
 
 CXX = c++ -g 

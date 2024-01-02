@@ -1,30 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Weapon.cpp                                         :+:      :+:    :+:   */
+/*   HumanB.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dcarrilh <dcarrilh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/02 15:27:43 by dcarrilh          #+#    #+#             */
-/*   Updated: 2024/01/02 15:45:18 by dcarrilh         ###   ########.fr       */
+/*   Created: 2024/01/02 17:07:22 by dcarrilh          #+#    #+#             */
+/*   Updated: 2024/01/02 18:29:41 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.hpp"
+#include "HumanB.hpp"
 
-Weapon::Weapon(std::string type)
+HumanB::HumanB(std::string name) : name(name), weapon(NULL) {}
+
+// HumanB::HumanB(std::string name)
+// {
+//   this->name = name;
+//   this->weapon = void;
+// }
+HumanB::~HumanB(){}
+
+void HumanB::attack()
 {
-  this->type = type;
+  std::cout << name << " attacks with their " << weapon->getType() << std::endl;
 }
 
-Weapon::~Weapon(){}
-
-std::string Weapon::getType()
+void HumanB::setWeapon(Weapon& w)
 {
-  return type;
-}
-
-void  Weapon::setType(std::string newType)
-{
-  type = newType;
+  weapon = &w;
 }

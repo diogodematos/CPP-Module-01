@@ -6,7 +6,7 @@
 /*   By: dcarrilh <dcarrilh@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 15:23:15 by dcarrilh          #+#    #+#             */
-/*   Updated: 2024/01/02 15:29:42 by dcarrilh         ###   ########.fr       */
+/*   Updated: 2024/01/02 15:44:30 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ private:
   
 public:
 
-  Weapon();
+  Weapon(std::string type);
   ~Weapon();
 
   std::string getType();
