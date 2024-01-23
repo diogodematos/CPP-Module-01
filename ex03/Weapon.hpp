@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dcarrilh <dcarrilh@student.42porto.com>    +#+  +:+       +#+        */
+/*   By: dcarrilh <dcarrilh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/02 15:23:15 by dcarrilh          #+#    #+#             */
-/*   Updated: 2024/01/02 15:44:30 by dcarrilh         ###   ########.fr       */
+/*   Updated: 2024/01/16 14:54:50 by dcarrilh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ public:
   Weapon(std::string type);
   ~Weapon();
 
-  std::string getType();
+  const std::string& getType();
   void setType(std::string newType);
   
 };
